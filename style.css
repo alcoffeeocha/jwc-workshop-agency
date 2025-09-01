@@ -11,6 +11,19 @@ body {
 
 /* Add styles here! */
 :root {
+  --space-sm: 8px;
+  --space-base: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 72px;
+  --space-4xl: 96px;
+
+  --font-size-base: 1.25rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 2rem;
+
   --color-gray: hsl(0, 0%, 40%);
   --color-gray-lighter: hsl(0, 0%, 60%);
   --color-gold: hsl(45, 100%, 50%);
@@ -19,7 +32,7 @@ body {
 }
 
 body {
-  font-size: 1.25rem;
+  font-size: var(--font-size-base);
   line-height: 1.5;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -31,7 +44,7 @@ h2 {
 }
 
 p {
-  margin-block: 1rem;
+  margin-block: var(--space-base);
 }
 
 strong {
@@ -41,24 +54,24 @@ strong {
 }
 
 header {
-  border-bottom: 8px solid var(--color-gray-lighter);
+  border-bottom: var(--space-sm) solid var(--color-gray-lighter);
 }
 
 .intro-chunk {
   max-width: 416px;
-  padding-inline: 24px;
-  padding-top: 96px;
-  padding-bottom: 64px;
+  padding-inline: var(--space-md);
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-2xl);
 
   letter-spacing: -0.5px;
 }
 
 .intro-chunk > .title {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-xl);
 }
 
 .title {
-  font-size: 2rem;
+  font-size: var(--font-size-lg);
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: 0;
@@ -69,36 +82,36 @@ header {
 }
 
 main {
-  padding-block: 4.5rem;
+  padding-block: var(--space-3xl);
 
   background-color: var(--color-gray);
 }
 
 .card {
-  padding-block: 8px;
-  padding-inline: 24px;
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-md);
 
   font-weight: 500;
 
   background-color: white;
-  border-bottom: 8px solid var(--color-gray-lighter);
+  border-bottom: var(--space-sm) solid var(--color-gray-lighter);
 }
 
 .indented-heading {
-  --left-indent: 32px;
+  --left-indent: var(--space-lg);
 
   max-width: 398px;
   margin-left: calc(var(--left-indent) * -1);
   padding-block: 12px;
   padding-left: var(--left-indent);
-  padding-right: 24px;
+  padding-right: var(--space-md);
 
-  font-size: 1.5rem;
+  font-size: var(--font-size-md);
   font-weight: 800;
   line-height: 1.2;
 
   background-color: var(--color-gold);
-  border-bottom: 8px solid var(--color-gold-darker);
+  border-bottom: var(--space-sm) solid var(--color-gold-darker);
 }
 
 .max-width-wrapper {
