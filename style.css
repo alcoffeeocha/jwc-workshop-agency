@@ -59,7 +59,6 @@ header {
 
 .intro-chunk {
   max-width: 416px;
-  padding-inline: var(--space-md);
   padding-top: var(--space-4xl);
   padding-bottom: var(--space-2xl);
 
@@ -88,6 +87,7 @@ main {
 }
 
 .card {
+  margin-inline: calc(var(--space-md) * -1);
   padding-block: var(--space-sm);
   padding-inline: var(--space-md);
 
@@ -117,4 +117,5 @@ main {
 .max-width-wrapper {
   max-width: 800px;
   margin-inline: auto;
+  padding-inline: var(--space-md);
 }
