@@ -100,7 +100,7 @@ main {
 .indented-heading {
   --left-indent: var(--space-lg);
 
-  max-width: 398px;
+  width: fit-content; /* using max-content can make long text overflowing */
   margin-left: calc(var(--left-indent) * -1);
   padding-block: 12px;
   padding-left: var(--left-indent);
