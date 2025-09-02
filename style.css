@@ -102,6 +102,7 @@ main {
 
   width: fit-content; /* using max-content can make long text overflowing */
   margin-left: calc(var(--left-indent) * -1);
+  margin-bottom: 1rem;
   padding-block: 12px;
   padding-left: var(--left-indent);
   padding-right: var(--space-md);
